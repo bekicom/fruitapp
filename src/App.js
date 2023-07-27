@@ -1,12 +1,12 @@
- import React from "react";
-
+import React from "react";
+import Fotter from "./components/Seting/fotter";
 function App() {
   return (
     <div className="App">
-      salom
-      
+      <Fotter></Fotter>
     </div>
   );
 }
+
 
 export default App;
