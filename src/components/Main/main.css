@@ -38,9 +38,8 @@ body {
 
 .phone {
   width: 414px;
-  height: 783px;
+  height: 100vh;
   background: #fff;
-  border-radius: 30px;
 
   display: flex;
   align-items: center;
@@ -69,9 +68,8 @@ body {
     
     .phone {
       width: 414px;
-      height: 783px;
+      height: 100vh;
       background: #fff;
-      border-radius: 30px;
     
       display: flex;
       align-items: center;

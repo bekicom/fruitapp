@@ -67,7 +67,7 @@ margin-top: 52px;
       font-weight: 700;
       line-height: normal;
       letter-spacing: -0.3px;
-      padding-top: 141px;
+      padding-top: 101px;
       padding-bottom: 54px;
       }
       #form1 > input{
@@ -76,7 +76,7 @@ margin-top: 52px;
       border-radius: 30px;
       background: rgba(196, 196, 196, 0.35);
       padding-left: 42px;
-      margin-top: 36px;
+      margin-top: 16px;
       
       }
       #form1 > span{
@@ -98,7 +98,7 @@ margin-top: 52px;
       border-radius: 30px;
       background: #F1C40F;
       color: white;
-      margin-top: 52px;
+      margin-top: 42px;
       }
 
     
