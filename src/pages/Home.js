@@ -9,6 +9,7 @@ export  function Home() {
         <NavLink to='/sign'>
 
             register
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim facilis illum libero fugit eligendi eaque minus autem vitae accusantium modi asperiores illo sed blanditiis, architecto ex dolores adipisci animi sint!
         </NavLink>
       
     </div>
