@@ -5,6 +5,7 @@ import {  Route, Routes } from 'react-router-dom'
 import { Home } from '../../pages/Home'
 import { Create } from '../../pages/Create'
 import { Navbar } from '../Navbar/Navbar'
+import { Footer } from '../Footer/Footer'
 
 export  function Main() {
   return (
@@ -21,6 +22,7 @@ export  function Main() {
         <Route    path='/create'  element={  <Create/>  }  />
 
     </Routes>
+    <Footer/>
 
   </div>
       
