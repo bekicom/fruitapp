@@ -25,6 +25,7 @@ export  function Main() {
     <Footer/>
 
   </div>
+
       
     </div>
   )
