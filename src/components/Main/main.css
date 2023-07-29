@@ -39,10 +39,11 @@ body {
 .phone {
   width: 414px;
   height: 100vh;
-  background: #fff;
+  background: #ffffff;
 
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
  

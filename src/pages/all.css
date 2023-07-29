@@ -49,6 +49,22 @@ color: white;
 margin-top: 52px;
 }
 
+ nav{
+    width: 100%;
+    padding: 17px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ svg{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0;
+}
+
+
+
 @media   (max-width:414px) {
     #form1{
 

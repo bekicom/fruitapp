@@ -4,13 +4,14 @@ import Sign from '../../pages/Sign'
 import {  Route, Routes } from 'react-router-dom'
 import { Home } from '../../pages/Home'
 import { Create } from '../../pages/Create'
+import { Navbar } from '../Navbar/Navbar'
 
 export  function Main() {
   return (
     <div className='main'>
   <div className="phone">
+   <Navbar/>
     
-
 
     <Routes>
 
