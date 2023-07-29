@@ -15,16 +15,16 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: -0.3px;
-padding-top: 60px;
-padding-bottom: 54px;
+padding-top: 200px;
+padding-bottom: 20px;
 }
 #form1 > input{
     width: 354px;
 height: 66px;
 border-radius: 30px;
 background: rgba(196, 196, 196, 0.35);
-padding-left: 42px;
-margin-top: 36px;
+padding-left: 20px;
+margin-top: 20px;
 
 }
 #form1 > span{
@@ -46,7 +46,7 @@ flex-shrink: 0;
 border-radius: 30px;
 background: #F1C40F;
 color: white;
-margin-top: 52px;
+margin-top: 20px;
 }
 
  nav{
