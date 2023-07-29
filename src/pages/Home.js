@@ -10,8 +10,7 @@ export  function Home() {
 
             register
 
-
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error mollitia quaerat, saepe laboriosam quis unde ratione reprehenderit esse, quidem eos deserunt officiis omnis alias! Quasi aliquam veritatis quidem earum iure.
+bekzodbek96
         </NavLink>
       
     </div>
