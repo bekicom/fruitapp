@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import img1 from '../assets/home/1.png'
 import img2 from '../assets/home/2.png'
 import img3 from '../assets/home/3.png'
@@ -24,8 +25,10 @@ export  function Home() {
     {img:img5, nomi:'Melon',narxi:998},
     {img:img6, nomi:'Mango',narxi:998},
   ]
- 
 
+
+
+  
 
 
   return (
@@ -41,8 +44,7 @@ export  function Home() {
 
    
 
-  
-      
+
     </div>
   )
 }
