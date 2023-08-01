@@ -13,7 +13,7 @@ export  function Home() {
         <NavLink to='/sign'>
 
             register
-
+    salom
 
         </NavLink>
       
