@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 import img1 from '../assets/home/1.png'
@@ -9,6 +9,10 @@ import img5 from '../assets/home/5.png'
 import img6 from '../assets/home/6.png'
 
 export  function Home() {
+
+  // const [savat,setSavat]=  useState([])
+
+  // console.log(savat);
 
   const data = [
 
@@ -27,18 +31,28 @@ export  function Home() {
   ]
 
 
+   
+   
+  const addcart = (index) => {
 
+console.log(index);
+  
+  }
   
 
+  
 
   return (
     <div className='products' >
   
-      {data.map((item)=>(
-          <div className='cart'>
+      {data.map((item,index)=>(
+          <div className='cart'   >
             <img src={item.img} alt="" />
             <p>{item.nomi}</p>
             <span>{item.narxi}</span>
+
+            <button onClick={addcart(   ()=>  index  )}>add</button>
+     
              </div>
       ))}
 
