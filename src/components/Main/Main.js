@@ -17,9 +17,10 @@ export  function Main() {
     <Routes>
 
 
-        <Route    path='/'  element={ <Home/>   }  />
+        <Route    path='/home'  element={ <Home/>   }  />
         <Route    path='/sign'  element={  <Sign/>   }  />
         <Route    path='/create'  element={  <Create/>  }  />
+
 
     </Routes>
     <Footer/>

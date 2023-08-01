@@ -55,6 +55,9 @@ margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
 
 }
 
@@ -69,11 +72,41 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 12px 30px ;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+  
 }
 
 
 #plus{
     margin-top: -30px;
+}
+
+/* **********home bor ********* */
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding-top: 100px;
+    
+}
+.cart{
+    width: 167px;
+height: 167px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+box-shadow: 2px 2px 5px gray ;
+}
+.cart > img {
+    width: 70%;
 }
 
 
