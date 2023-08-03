@@ -19,18 +19,18 @@ export  function Home() {
 
   const data = [
 
-    {img:img1, nomi:'Pineapple',narxi:955},
-    {img:img2, nomi:'Banana',narxi:998},
-    {img:img3, nomi:'Green Grapes',narxi:998},
-    {img:img4, nomi:'Grapes',narxi:998},
-    {img:img5, nomi:'Melon',narxi:998},
-    {img:img6, nomi:'Mango',narxi:998},
-    {img:img4, nomi:'Grapes',narxi:998},
-    {img:img5, nomi:'Melon',narxi:998},
-    {img:img6, nomi:'Mango',narxi:998},
-    {img:img4, nomi:'Grapes',narxi:998},
-    {img:img5, nomi:'Melon',narxi:998},
-    {img:img6, nomi:'Mango',narxi:998},
+    {img:img1,id:1, nomi:'Pineapple',narxi:955},
+    {img:img2,id:2, nomi:'Banana',narxi:998},
+    {img:img3,id:3, nomi:'Green Grapes',narxi:998},
+    {img:img4,id:4, nomi:'Grapes',narxi:998},
+    {img:img5,id:5, nomi:'Melon',narxi:998},
+    {img:img6,id:6, nomi:'Mango',narxi:998},
+    {img:img4,id:7, nomi:'Grapes',narxi:998},
+    {img:img5,id:8, nomi:'Melon',narxi:998},
+    {img:img6,id:9, nomi:'Mango',narxi:998},
+    {img:img4,id:10, nomi:'Grapes',narxi:998},
+    {img:img5,id:11, nomi:'Melon',narxi:998},
+    {img:img6,id:12, nomi:'Mango',narxi:998},
   ]
 
 
@@ -42,15 +42,7 @@ export  function Home() {
     
     let test = true;
 
-    // MyData.map((e) => {
-    //   if (e.id === item.id) {
-    //     test = false;
-    //     // e.count += 1;
-    //     setBasket(MyData);
-    //     localStorage.setItem("food", JSON.stringify(MyData));
-    //   }
-    //   return null;
-    // });
+  
 
     if (test) {
       MyData.push(item);

@@ -124,22 +124,32 @@ padding: 10px;
 
 .basket{
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
     overflow: scroll;
 }
 
+
 .cart_basket{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
+    top: -120px;
 }
 .cart_basket > img{
     width: 80px;
     height: 80px;
+}
+
+.basket > p{
+    padding-top: 250px;
+    text-align: center;
+
+    font-size: 50px;
 }
 
 

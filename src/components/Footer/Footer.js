@@ -4,13 +4,17 @@ import '../../pages/all.css'
 import { useNavigate } from 'react-router-dom'
 
 export  function Footer() {
-        const [color,setColor] =useState(false)
+        const [color,setColor] =useState(true)
+        const [color2,setColor2] =useState(true)
 
   const navigate = useNavigate()
 
   const add = ()=>{
         setColor(!color)
        
+  }
+  const addbasket = ()=>{
+        setColor2(!color2)
   }
 
 
@@ -37,10 +41,10 @@ export  function Footer() {
 <path d="M17.7027 30H42.2973" stroke="white"  stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </button>
-        <button onClick={(()=> navigate( '/basket'))}  ><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.75 31.1667C13.5324 31.1667 14.1667 30.5325 14.1667 29.75C14.1667 28.9676 13.5324 28.3334 12.75 28.3334C11.9676 28.3334 11.3333 28.9676 11.3333 29.75C11.3333 30.5325 11.9676 31.1667 12.75 31.1667Z" stroke="#C0C0C0" stroke-Width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.3333 31.1667C29.1157 31.1667 29.75 30.5325 29.75 29.75C29.75 28.9676 29.1157 28.3334 28.3333 28.3334C27.5509 28.3334 26.9167 28.9676 26.9167 29.75C26.9167 30.5325 27.5509 31.1667 28.3333 31.1667Z" stroke="#C0C0C0" stroke-Width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1.41666 1.41663H7.08333L10.88 20.3858C11.0095 21.038 11.3644 21.6239 11.8824 22.0409C12.4003 22.4579 13.0485 22.6794 13.7133 22.6666H27.4833C28.1482 22.6794 28.7963 22.4579 29.3143 22.0409C29.8323 21.6239 30.1871 21.038 30.3167 20.3858L32.5833 8.49996H8.5" stroke="#C0C0C0" stroke-Width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <button onClick={(()=> navigate( '/basket',addbasket()))}  ><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.75 31.1667C13.5324 31.1667 14.1667 30.5325 14.1667 29.75C14.1667 28.9676 13.5324 28.3334 12.75 28.3334C11.9676 28.3334 11.3333 28.9676 11.3333 29.75C11.3333 30.5325 11.9676 31.1667 12.75 31.1667Z" stroke={color2? "#C0C0C0" :'#F1C40F'} stroke-Width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.3333 31.1667C29.1157 31.1667 29.75 30.5325 29.75 29.75C29.75 28.9676 29.1157 28.3334 28.3333 28.3334C27.5509 28.3334 26.9167 28.9676 26.9167 29.75C26.9167 30.5325 27.5509 31.1667 28.3333 31.1667Z" stroke={color2? "#C0C0C0" :'#F1C40F'}stroke-Width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.41666 1.41663H7.08333L10.88 20.3858C11.0095 21.038 11.3644 21.6239 11.8824 22.0409C12.4003 22.4579 13.0485 22.6794 13.7133 22.6666H27.4833C28.1482 22.6794 28.7963 22.4579 29.3143 22.0409C29.8323 21.6239 30.1871 21.038 30.3167 20.3858L32.5833 8.49996H8.5" stroke={color2? "#C0C0C0" :'#F1C40F'} stroke-Width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </button>
         <button><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
