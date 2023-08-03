@@ -9,6 +9,9 @@ import img5 from '../assets/home/5.png'
 import img6 from '../assets/home/6.png'
 
 export  function Home() {
+  const [basket, setBasket] = useState(
+    JSON.parse(localStorage.getItem("food")) || []
+  );
 
   // const [savat,setSavat]=  useState([])
 
@@ -33,10 +36,30 @@ export  function Home() {
 
    
    
-  const addcart = (index) => {
+  function locol(item) {
 
-console.log(index);
-  
+    const MyData = [...basket];
+    
+    let test = true;
+
+    // MyData.map((e) => {
+    //   if (e.id === item.id) {
+    //     test = false;
+    //     // e.count += 1;
+    //     setBasket(MyData);
+    //     localStorage.setItem("food", JSON.stringify(MyData));
+    //   }
+    //   return null;
+    // });
+
+    if (test) {
+      MyData.push(item);
+      setBasket(MyData);
+      localStorage.setItem("food", JSON.stringify(MyData));
+    }
+
+    console.log(test);
+
   }
   
 
@@ -51,7 +74,7 @@ console.log(index);
             <p>{item.nomi}</p>
             <span>{item.narxi}</span>
 
-            <button onClick={addcart(   ()=>  index  )}>add</button>
+            <button onClick={locol.bind(this, item)}>add</button>
      
              </div>
       ))}
