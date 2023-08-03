@@ -9,7 +9,9 @@ export  function Basket() {
     const [getdata,setGetdata] = useState(
         JSON.parse(localStorage.getItem('food'))||[]
     )  
+   
 
+    console.log(setGetdata(getdata));
 
     
   return (
