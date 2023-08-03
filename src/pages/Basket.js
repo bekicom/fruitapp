@@ -11,7 +11,7 @@ export  function Basket() {
     )  
    
 
-    console.log(setGetdata(getdata));
+    console.log(setGetdata);
 
     
   return (
