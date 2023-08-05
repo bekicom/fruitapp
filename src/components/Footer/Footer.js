@@ -22,9 +22,9 @@ export  function Footer() {
   ///  basket count 
   const [b_son,setB_son] =  useState(
 
-
         JSON.parse(localStorage.getItem('food'))
   )
+  console.log(setB_son())
   
 
 

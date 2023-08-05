@@ -14,10 +14,7 @@ export  function Home() {
     JSON.parse(localStorage.getItem("food")) || []
   );
 
-  const [updeate, setUpdate] = useState(false);
-  useEffect(() => {
-    setBasket(JSON.parse(localStorage.getItem("food")) || []);
-  }, [updeate]);
+
   
   const notify = () => toast("malumot basketga qoshildi ");
 
@@ -60,7 +57,6 @@ export  function Home() {
       localStorage.setItem("food", JSON.stringify(MyData));
     }
 
-    setUpdate((prev) => !prev);
     notify()
 
   }
