@@ -13,12 +13,9 @@ export  function Navbar() {
 <path d="M19 12.6667L12.6666 19L19 25.3334" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M25.3333 19H12.6666" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-</button>
+</button >
     <span>Shop</span>
-    <button><svg width="38" height="38" viewBox="#ffffff" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.4167 30.0833C24.4123 30.0833 30.0833 24.4123 30.0833 17.4167C30.0833 10.4211 24.4123 4.75 17.4167 4.75C10.4211 4.75 4.75 10.4211 4.75 17.4167C4.75 24.4123 10.4211 30.0833 17.4167 30.0833Z" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M33.25 33.25L26.3625 26.3625" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+    <button   onClick={()=> navi('/create')}>reg
 </button>
    </nav>
   )

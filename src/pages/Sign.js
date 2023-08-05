@@ -1,10 +1,13 @@
 import React from 'react'
 import './all.css'
-import {  useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+
 
 export default function Sign() {
 
-   const navigate  = useNavigate()
+
+   
+  const navi =  useNavigate()
 
 
   return (
@@ -16,9 +19,7 @@ export default function Sign() {
      <input type="text"  placeholder='Password' />
 
      <span>Forgot password?</span>
-     <button  onClick={() => {
-              navigate("/create");
-            }}  >Sign In</button>
+     <button  onClick={()=> navi('/Home')}  >Sign In</button>
 
          
         </form>

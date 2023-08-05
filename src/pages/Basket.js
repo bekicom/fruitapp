@@ -11,7 +11,6 @@ export function Basket() {
     )
 
 
-
     console.log(getdata.length > 1 ? 'bor' : 'yoq');
 
     console.log(setGetdata);

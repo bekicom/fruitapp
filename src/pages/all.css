@@ -58,6 +58,7 @@ margin-top: 20px;
     position: fixed;
     background-color: white;
     top: 0;
+    z-index: 50;
 
 }
 
@@ -73,6 +74,7 @@ footer{
     justify-content: space-between;
     padding: 12px 30px ;
     position: fixed;
+    z-index: 50;
     bottom: 0;
     background-color: white;
   
@@ -152,6 +154,14 @@ padding: 10px;
     font-size: 50px;
 }
 
+
+#span{
+    position: absolute;
+    background: none;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 @media   (max-width:414px) {
     #form1{
