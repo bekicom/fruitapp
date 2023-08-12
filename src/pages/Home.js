@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 
 import img1 from '../assets/home/1.png'
@@ -15,7 +15,9 @@ export  function Home() {
   );
 
 
-  
+
+
+
   const notify = () => toast("malumot basketga qoshildi ");
 
   // console.log(savat);
