@@ -77,8 +77,11 @@ export function Basket() {
 
     return (
         <div className='basket'  >
+
+            
             
   <p>{getdata.length >= 1?'':'malumot yoq'}</p>
+  <span  id='total'>Umumiy narxi:{tot}$</span>
  
             {getdata.map((item) => (
                 <div className='cart_basket'   >
@@ -102,7 +105,7 @@ export function Basket() {
                  
                 </div>
             ))}
-             <span>{tot}</span>
+             
         </div>
     )
 }

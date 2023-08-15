@@ -180,6 +180,17 @@ padding: 10px;
 
 }
 
+#total{
+    /* position: absolute; */
+    top: 60px;
+    position: fixed;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 60;
+    left: 65px;
+}
+
 @media   (max-width:414px) {
     #form1{
 

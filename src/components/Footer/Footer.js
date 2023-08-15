@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 
 import '../../pages/all.css'
 import { useNavigate } from 'react-router-dom'
@@ -24,13 +24,25 @@ export  function Footer() {
   
 
   ///  basket count 
-  const [b_son] =  useState(
+  const [b_son,setB_son] =  useState(
 
 
         JSON.parse(localStorage.getItem('food'))
   )
   
   // obnavit
+  useEffect(() => {
+        const interval = setInterval(() => {
+          const updatedBasket = JSON.parse(localStorage.getItem('food'));
+          if (updatedBasket) {
+                setB_son(updatedBasket);
+          }
+        }, 100); // 1000 ms = 1 sekund
+      
+        return () => {
+          clearInterval(interval);
+        };
+      }, []);
  
 
 
