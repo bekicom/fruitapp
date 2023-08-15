@@ -12,69 +12,60 @@ export function Basket() {
 
     // umumiy narx uchun state
 
-    const [ tot,setTot] = useState(0)
+    const [tot, setTot] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-          const updatedBasket = JSON.parse(localStorage.getItem('food'));
-          if (updatedBasket) {
-            setGetdata(updatedBasket);
-          }
-        }, 100); // 1000 ms = 1 sekund
-      
+            const updatedBasket = JSON.parse(localStorage.getItem('food'));
+            if (updatedBasket) {
+                setGetdata(updatedBasket);
+            }
+        }, 1000); // 1000 ms = 1 sekund
+    
         return () => {
-          clearInterval(interval);
+            clearInterval(interval);
         };
-      }, []);
-
-
-
-
-    // bu remove functioni
+    }, []);
+    
     function remove(itemToRemove) {
-        alert('ochirmoqchimisiz')
-        const MyData = [...getdata];
-        const updatedData = MyData.filter(item => item !== itemToRemove);
+        const updatedData = getdata.filter(item => item !== itemToRemove);
         setGetdata(updatedData);
         localStorage.setItem("food", JSON.stringify(updatedData));
     }
-
-    //plus functioni
-
-
-    const plus =(id)=>{
-        const yangidata = [...getdata]
-        yangidata.map((item)=>{
-            if(item.id === id){
-               item.count = item.count+1
-               localStorage.setItem('food',JSON.stringify(yangidata))
+    
+    const plus = (id) => {
+        const updatedData = getdata.map((item) => {
+            if (item.id === id) {
+                item.count = item.count + 1;
             }
-        })
-
-
+            return item;
+        });
+        setGetdata(updatedData);
+        localStorage.setItem('food', JSON.stringify(updatedData));
     }
-// minus function
-    const minus =(id)=>{
-        const yangidata = [...getdata]
-        yangidata.map((item)=>{
-            if(item.id === id){
-               item.count = item.count>=1? item.count-1 :item.count
-               localStorage.setItem('food',JSON.stringify(yangidata))
+    
+    const minus = (id) => {
+        const updatedData = getdata.map((item) => {
+            if (item.id === id) {
+                item.count = item.count >= 1 ? item.count - 1 : item.count;
             }
-        })
+            return item;
+        });
+        setGetdata(updatedData);
+        localStorage.setItem('food', JSON.stringify(updatedData));
     }
-
-
-
-    /// umumiy narx
-    useEffect(()=>{
+    
+    useEffect(() => {
         let total = 0;
-        getdata.map((item)=>{
-          total += item.narxi * item.count;
-          return setTot(total)
-        })
-      },[plus])
-
+        getdata.forEach((item) => {
+            total += item.narxi * item.count;
+        });
+        setTot(total);
+    }, [getdata]);
+    
+    // ...
+    
+    
     return (
         <div className='basket'  >
 
